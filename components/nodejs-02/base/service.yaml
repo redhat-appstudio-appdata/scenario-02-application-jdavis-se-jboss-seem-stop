@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: nodejs-02
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: nodejs-02
+    app.kubernetes.io/part-of: scenario-02-application
+  name: nodejs-02
+  namespace: jdavis-se-jboss
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: nodejs-02
+status:
+  loadBalancer: {}
