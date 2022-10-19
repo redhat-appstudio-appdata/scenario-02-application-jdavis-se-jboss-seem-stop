@@ -4,4 +4,5 @@ bases:
 - components/java-springboot/base
 - components/nodejs-02/base
 - components/nodejs/base
+- components/python/base
 kind: Kustomization
